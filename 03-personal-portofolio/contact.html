@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple HTML-only website">
+    <title>Contact | Basic HTML Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A simple HTML-only website for roadmap.sh frontend" />
+    <meta name="keywords" content="Frontend Developer Projects, HTML, CSS, Web Development, Roadmap.sh" />
+    <meta name="author" content="Salman Alfarisi" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Salman Alfarisi - Junior Front-End Developer" />
+    <meta property="og:description" content="Single Page CV of Salman Alfarisi, a Junior Front-End Developer." />
+    <meta property="og:image" content="https://res.cloudinary.com/duidrgg1k/image/upload/v1725421776/male-technologist_n0fbey.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://salmanalfarisi.dev" />
+    <!-- Favicon -->
+    <link rel="icon" href="https://salmanalfarisi.dev/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <img width="64" src="https://raw.githubusercontent.com/Salfarisi/main/refs/heads/main/Logo%20S.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact_page">
+            <h1>Contact Me</h1>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy all rights reserved 2025</p>
+    </footer>
+</body>
+</html>

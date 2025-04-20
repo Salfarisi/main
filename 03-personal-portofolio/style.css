@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: inline-block;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main layout */
+main {
+    display: grid;
+    margin: 1%;
+    grid-template-columns: 30% auto 30%;
+    gap: 10px;
+    min-height: 100%;
+}
+
+main ul li {
+    list-style: none;
+}
+
+section {
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.intro {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.reviews {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.projects_page {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: left;
+}
+
+.projects_page h1 {
+    padding-bottom: 25px;
+}
+
+.projects_page li {
+    padding-bottom: 10px;
+}
+
+.articles_page {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: left;
+}
+
+.articles_page h1 {
+    padding-bottom: 25px;
+}
+
+.articles_page li {
+    padding-bottom: 10px;
+}
+
+.contact_page {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: left;
+}
+
+.contact_page h1 {
+    padding-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+    bottom: 0;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .section-row {
+        flex-direction: column;
+        /* Menjadikan kolom menjadi satu baris pada layar kecil */
+    }
+
+    .projects,
+    .work-experience,
+    .education {
+        width: 100%;
+        /* Lebar 100% pada layar kecil */
+    }
+}
